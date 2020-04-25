@@ -5,11 +5,11 @@ const Members = ({teamMembers}) => {
 
     return (
         <div>
-            {teamMembers.map(teamMember => (
+            {teamMembers.map(teamMembers => (
                 <div>
-                    <h2> {teamMember.name} </h2>
-                    <p> {teamMember.email} </p>
-                    <p> {teamMember.role} </p>
+                    <h2> {teamMembers.name} </h2>
+                    <p> {teamMembers.email} </p>
+                    <p> {teamMembers.role} </p>
                 </div>
             ))}
         </div>

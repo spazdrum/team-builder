@@ -26,13 +26,13 @@ const Form =({ addNewMember }) => {
 
     return (
         <div>
-            <form onSubmit={submitForm}>
+            <form onSubmit={submit}>
                 <label htmlFor="name">Name</label>
-                <input onChange={inputChange} type="text" placeholder="name" name="name" id="name" value={member.name} />
+                <input onChange={handleChanges} type="text" placeholder="name" name="name" id="name" value={member.name} />
                 <label htmlFor="email">E-Mail</label>
-                <input onChange={inputChange} type="email" placeholder="email" name="email" id="email" value={mamber.email} />
+                <input onChange={handleChanges} type="email" placeholder="email" name="email" id="email" value={member.email} />
                 <label htmlFor="role">Role</label>
-                <select onChange={inputChange} placeholder="role" name="role" id="role" value={member.role}>
+                <select onChange={handleChanges} placeholder="role" name="role" id="role" value={member.role}>
                     <option>Frontend Engineer</option>
                     <option>Backend Engineer</option>
                     <option>Designer</option>
